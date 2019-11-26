@@ -25,18 +25,18 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <?php
-                wp_nav_menu( array (
-                    'theme_location'    => 'menu',
-                    'menu_id'           => 'primary-menu',
+                $args = array (
                     'container'         => 'ul',
                     'menu_class'        => 'navbar-nav ml-auto',
-                ))
+                    'add_li_class'      => 'nav-item nav-link',
+                );
+                wp_nav_menu($args);
                 ?>
         </div>
     </nav>

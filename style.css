@@ -1,0 +1,31 @@
+
+    .row{
+        height: 100%;
+    }
+    .col-lg-9 {
+        max-width: 100% !important;
+    }
+
+    .col-1{
+        max-width: 100% !important;
+    }
+    .col-2{
+        max-width: 100% !important;
+    }
+
+    #searchinput{
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    @media (max-width:979px){
+        .woocommerce .product-box{
+            height: auto;
+        }
+    }
+
+    @media (min-width:979px){
+    .woocommerce .product-box{
+        height: 400px;
+    }
+}
+    
